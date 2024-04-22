@@ -5,16 +5,45 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: #f0f0f0; /* Cor de fundo para visualização */
-    margin-top: 100px;
+    
 }
 
-.conteudo__container__inicial h1 {
-    font-size: 5rem; /* Exemplo de estilo para o título */
-    color: white; /* Cor do texto */
-} 
-
-.conteudo__logo__contato {
+.conteudo_logo__contato {
     display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    gap: 80px;
+}
+
+.conteudo_logo__contato a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+}
+
+.conteudo_logo__contato a img {
+    width: 80px;
+    height: 80px;
+    margin-right: 10px;
+}
+
+.conteudo_logo__contato a p {
+    margin: 0;
+}
+
+.button_paginicial{
     
+    display: inline-block;
+    background-color: #007bff;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+
+}
+
+.botao:hover {
+    background-color: #0056b3;
 }
