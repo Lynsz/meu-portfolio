@@ -1,0 +1,20 @@
+.conteudo__container__inicial {
+    background-image: url(/img/blackot_antonina.jpg) ;
+    height: 100vh; /* Define a altura para 100% da viewport height */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f0f0f0; /* Cor de fundo para visualização */
+    margin-top: 100px;
+}
+
+.conteudo__container__inicial h1 {
+    font-size: 5rem; /* Exemplo de estilo para o título */
+    color: white; /* Cor do texto */
+} 
+
+.conteudo__logo__contato {
+    display: flex;
+    
+}
