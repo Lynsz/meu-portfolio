@@ -1,25 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lugrasimo&family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lugrasimo&display=swap');
+
 .conteudo__container__inicial {
     background-image: url(/img/blackot_antonina.jpg) ;
     height: 100vh; /* Define a altura para 100% da viewport height */
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    
+    align-items: center; 
+}
+
+.conteudo__nome {
+    font-family: "Lugrasimo", cursive;
+    font-weight: 400;
+    font-size: 30px;
 }
 
 .conteudo_logo__contato {
     display: flex;
     flex-direction: column;
+    justify-content: end;
     font-size: 18px;
-    gap: 80px;
+    gap: 50px;
 }
 
 .conteudo_logo__contato a {
+    font-family: "Lugrasimo", cursive;
+    font-weight: 400;
     display: flex;
     align-items: center;
-    text-decoration: none;
-    color: black;
+    font-size: 25px;
 }
 
 .conteudo_logo__contato a img {
@@ -28,15 +36,9 @@
     margin-right: 10px;
 }
 
-.conteudo_logo__contato a p {
-    margin: 0;
-}
-
 .button_paginicial{
     
     display: inline-block;
-    background-color: #007bff;
-    color: black;
     padding: 10px 20px;
     border-radius: 30px;
     text-decoration: none;
@@ -44,6 +46,7 @@
 
 }
 
-.botao:hover {
-    background-color: #0056b3;
+.button_paginicial:hover {
+    background-color: black;
 }
+

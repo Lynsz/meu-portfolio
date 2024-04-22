@@ -44,7 +44,7 @@ header {
 }
 
 /* Estilos adaptativos para telas com largura máxima de 798px */
-@media screen and (max-width: 798px) {
+@media screen and (max-width: 768px) {
     /* Ajusta o layout do header */
     header {
         display: flex;
