@@ -1,0 +1,53 @@
+
+
+.conteudo__container__sobremim {
+    display: flex;    
+    align-items: center;
+    background-image: url(/img/blackot_antonina_desfoque.png);
+    height: 100vh; /* Define a altura para 100% da viewport height */
+
+}
+
+.img_sobremim {
+    display: flex;
+    align-items: center;
+}
+
+.conteudo__sobremim {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+    
+}
+
+.sobremim {
+    display: flex;
+    font-size: 2.9rem;
+    
+    
+}
+
+.aboutmetext {
+    font-family: "Lugrasimo", cursive; /* Define a fonte */
+    font-size: 2rem;
+    text-align: center;
+    margin: 0;
+}
+
+.citaçao {
+    font-family: "Lugrasimo", cursive; /* Define a fonte */
+    display: flex;
+    font-size: 2rem;
+    
+
+}
+
+.name_autor {
+    font-family: "Lugrasimo", cursive; /* Define a fonte */
+    display: flex;
+    font-size: 2rem;
+    
+    
+}
+

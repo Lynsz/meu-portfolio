@@ -1,52 +1,101 @@
+/* Importação de fontes do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lugrasimo&family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lugrasimo&display=swap');
 
+/* Estilos para o conteúdo inicial */
 .conteudo__container__inicial {
-    background-image: url(/img/blackot_antonina.jpg) ;
-    height: 100vh; /* Define a altura para 100% da viewport height */
     display: flex;
-    align-items: center; 
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(/img/blackot_antonina.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /* Torna a imagem de fundo responsiva */
+    height: 100vh; /* Define a altura para 100% da viewport height */
+    margin-top: 100px;
+    gap: 50px; /* Define o espaçamento entre os elementos */
 }
 
+/* Estilos para o nome do conteúdo */
 .conteudo__nome {
-    font-family: "Lugrasimo", cursive;
-    font-weight: 400;
-    font-size: 30px;
+    font-family: "Lugrasimo", cursive; /* Define a fonte */
+    font-weight: 400; /* Define o peso da fonte */
+    font-size: 30px; /* Define o tamanho da fonte */
 }
 
+/* Estilos para a seção de contatos */
 .conteudo_logo__contato {
     display: flex;
-    flex-direction: column;
-    justify-content: end;
-    font-size: 18px;
-    gap: 50px;
+    flex-direction: column; /* Define a direção dos elementos */
+    font-size: 18px; /* Define o tamanho da fonte */
+    gap: 60px; /* Define o espaçamento entre os elementos */
 }
 
+/* Estilos para os links de contatos */
 .conteudo_logo__contato a {
-    font-family: "Lugrasimo", cursive;
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-    font-size: 25px;
+    font-family: "Lugrasimo", cursive; /* Define a fonte */
+    font-weight: 400; /* Define o peso da fonte */
+    display: flex; /* Faz com que os elementos se comportem como flexbox */
+    align-items: center; /* Alinha os itens verticalmente */
+    font-size: 25px; /* Define o tamanho da fonte */
 }
 
+/* Estilos para as imagens dos links de contatos */
 .conteudo_logo__contato a img {
-    width: 80px;
-    height: 80px;
-    margin-right: 10px;
+    width: 80px; /* Define a largura da imagem */
+    height: 80px; /* Define a altura da imagem */
+    margin-right: 10px; /* Define a margem à direita da imagem */
 }
 
-.button_paginicial{
-    
-    display: inline-block;
-    padding: 10px 20px;
-    border-radius: 30px;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-
+/* Estilos para os botões da página inicial */
+.button_paginicial {
+    display: inline-block; /* Faz com que o elemento se comporte como um bloco de nível inline */
+    padding: 10px 20px; /* Define o preenchimento interno */
+    border-radius: 20px; /* Define o raio do canto */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    transition: background-color 0.3s ease; /* Adiciona uma transição suave na mudança de cor de fundo */
 }
 
+/* Estilos para o hover dos botões da página inicial */
 .button_paginicial:hover {
-    background-color: black;
+    background-color: black; /* Muda a cor de fundo ao passar o mouse */
 }
 
+/* Estilos responsivos para telas com largura máxima de 768px */
+@media screen and (max-width: 768px) {
+    .conteudo__container__inicial {
+        flex-direction: column; /* Altera a direção do flexbox para coluna */
+        margin-top: 10px;
+        background-image: url(/img/img_background\ 768px.png);
+        text-align: center; /* Centraliza o texto */
+        padding: 0px; /* Adiciona um espaçamento interno */
+        gap: 0px; /* Define o espaçamento entre os elementos */
+    }
+
+    .conteudo__nome {
+        display: none; /* Reduz o tamanho da fonte */
+    }
+
+    .conteudo_logo__contato {
+        gap: 30px; /* Reduz o espaçamento entre os elementos */
+    }
+}
+
+/* Estilos responsivos para telas com largura máxima de 360px */
+@media screen and (max-width: 360px) {
+    .conteudo__container__inicial {
+        gap: 0px; /* Reduz ainda mais o espaçamento entre os elementos */
+    }
+
+    .conteudo__nome {
+        font-size: 10px; /* Reduz ainda mais o tamanho da fonte */
+    }
+
+    .conteudo_logo__contato {
+        gap: 20px; /* Reduz ainda mais o espaçamento entre os elementos */
+    }
+
+    .button_paginicial {
+        padding: 8px 16px; /* Reduz o tamanho do botão */
+        font-size: 16px; /* Reduz o tamanho da fonte do botão */
+    }
+}

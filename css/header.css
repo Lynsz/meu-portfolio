@@ -1,6 +1,6 @@
 /* Importa as fontes do Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Roboto+Slab:wght@100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lugrasimo&display=swap');
 /* Define a cor do texto como branco para todos os elementos */
 * {
     color: white;
@@ -21,16 +21,19 @@ header {
 
 /* Estilos para o logotipo */
 .logo_K {
-    height: 80px; /* Define a altura do logotipo */
+    height: 70px; /* Define a altura do logotipo */
 }
 
+.nome_header {
+    display: none;
+}
 /* Estilos para os links no header */
 .links_header {
     font-family: "Roboto Slab", serif; /* Define a fonte */
     font-weight: 600; /* Define a espessura da fonte */
     font-size: 20px; /* Define o tamanho da fonte */
     display: flex; /* Aplica flexbox para os links */
-    gap: 40px; /* Define o espaçamento entre os links */
+    gap: 20px; /* Define o espaçamento entre os links */
 }
 
 /* Remove o sublinhado padrão dos links */
@@ -49,7 +52,7 @@ header {
     header {
         display: flex;
         justify-content: space-between;
-        height: 150px;
+        height: 100px;
         width: 80;
     }
 
@@ -58,11 +61,21 @@ header {
         display: none;
     }
 
+
+
     /* Ajusta o tamanho e o espaçamento do logotipo */
     .logo_K {
         display: flex;
         height: 80px;
-        padding: 30px;
+        padding: 10px;
+    }
+
+    .nome_header {
+
+        display: flex;
+        font-size: 20px;
+        font-family: "Lugrasimo", cursive; /* Define a fonte */
+        font-weight: 400; /* Define o peso da fonte */
     }
 
     /* Exibe a lista de ícones */
@@ -100,6 +113,7 @@ header {
         display: flex;
         flex-direction: row;
         height: 80px;
-        padding: 40px;
+        padding: 0px;
+
     }
 }
