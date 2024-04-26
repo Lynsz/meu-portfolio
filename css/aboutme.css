@@ -1,53 +1,138 @@
-
-
+/* Estilos para o container principal da seção SOBRE MIM */
 .conteudo__container__sobremim {
-    display: flex;    
-    align-items: center;
+    display: flex;
+    flex-direction: row;
     background-image: url(/img/blackot_antonina_desfoque.png);
-    height: 100vh; /* Define a altura para 100% da viewport height */
-
+    height: 100vh; /* Altura igual à altura da viewport */
+    justify-content: center; /* Centraliza verticalmente o conteúdo */
+    align-items: center; /* Centraliza horizontalmente o conteúdo */
 }
 
+/* Estilos para o conteúdo de texto */
+.conteudo__sobremim {
+    margin-bottom: 1.875rem; /* 30px em rem */
+    margin-right: 0; /* Removido */
+}
+
+/* Estilos para a div que contém a imagem */
 .img_sobremim {
     display: flex;
     align-items: center;
+    margin-left: 1.25rem; /* 20px em rem */
 }
 
-.conteudo__sobremim {
+/* Estilos para a imagem */
+.aboutmephoto {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-   
-    
 }
 
+/* Estilos para o título "SOBRE MIM" */
 .sobremim {
-    display: flex;
-    font-size: 2.9rem;
-    
-    
-}
-
-.aboutmetext {
-    font-family: "Lugrasimo", cursive; /* Define a fonte */
-    font-size: 2rem;
+    font-family: "Lugrasimo", cursive;
+    font-size: 2rem; /* 2 rem */
+    margin-bottom: 1rem; /* 1rem */
     text-align: center;
-    margin: 0;
 }
 
-.citaçao {
-    font-family: "Lugrasimo", cursive; /* Define a fonte */
-    display: flex;
-    font-size: 2rem;
-    
-
+/* Estilos para o texto "aboutmetext" */
+.aboutmetext {
+    font-family: "Lugrasimo", cursive;
+    font-weight: 400;
+    font-size: 1.5rem; /* 1.5 rem */
+    text-align: center;
+    margin: 0.625rem 1.25rem 0.625rem 1.25rem; /* 10px 20px 10px 20px */
 }
 
+/* Estilos para a citação */
+.citacao {
+    font-family: "Lugrasimo", cursive;
+    font-weight: 400;
+    font-size: 1.4rem; /* 1.4 rem */
+    margin: 1.25rem 2.5rem 0.0625rem 5.625rem; /* 20px 40px 1px 90px */
+    text-align: end;
+}
+
+/* Estilos para o nome do autor */
 .name_autor {
-    font-family: "Lugrasimo", cursive; /* Define a fonte */
-    display: flex;
-    font-size: 2rem;
-    
-    
+    font-family: "Lugrasimo", cursive;
+    font-weight: 400;
+    font-size: 1.4rem; /* 1.4 rem */
+    text-align: end;
+    margin: 0.625rem 2.5rem 0.25rem 5.625rem; /* 10px 40px 4px 90px */
 }
 
+/* Media queries para telas até 768px */
+@media screen and (max-width: 760px) {
+    .conteudo__container__sobremim {
+        flex-direction: column; /* Altera a direção do flex para empilhamento */
+        justify-content: center;
+    }
+
+    .img_sobremim {
+        height: 50%;
+    }
+
+    .aboutmephoto {
+        height: 80%;
+    }
+
+    .sobremim {
+        font-size: 1.5rem; /* 1.5 rem */
+        margin-top: 0;  
+    }
+
+    .aboutmetext {
+        font-size: 1.3rem; /* 1.3 rem */
+        text-align: center;
+    }
+
+    .citacao {
+        font-size: 1.3rem; /* 1.3 rem */
+        margin: 1.25rem 1.25rem 0.0625rem 5.625rem; /* 20px 20px 1px 90px */
+        text-align: end;
+    }
+    
+    .name_autor {
+        font-size: 1.5rem; /* 1.5 rem */
+        margin: 0.625rem 2.5rem 0.25rem 5.625rem; /* 10px 40px 4px 90px */
+    }
+}
+
+/* Media queries para telas até 360px */
+@media screen and (max-width: 360px) {
+    .conteudo__sobremim {
+        margin: 0; /* Reset da margem */
+    }
+
+    .img_sobremim {
+        margin: 0; /* Reset da margem */
+    }
+
+    .aboutmephoto {
+        margin: 0; /* Reset da margem */
+        height: 90%; /* 90% */
+        width: 100%; /* 100% */
+    }
+
+    .sobremim {
+        font-size: 1rem; /* 1 rem */
+        margin: 0; /* Reset da margem */
+    }
+
+    .aboutmetext {
+        padding: 0; /* Removido */
+        font-size: 1.2rem; /* 1.2 rem */
+        text-align: center;
+    }
+
+    .citacao {
+        font-size: 1rem; /* 1 rem */
+        margin: 0.625rem 1.25rem 0; /* 10px 20px 0 */
+        text-align: end;
+    }
+    
+    .name_autor {
+        font-size: 1rem; /* 1 rem */
+        margin-right: 20px;
+    }
+}

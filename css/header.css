@@ -52,26 +52,22 @@ header {
     header {
         display: flex;
         justify-content: space-between;
-        height: 100px;
-        width: 80;
+        height: 60px;
+        width:  100%;
     }
 
     /* Esconde os links do header */
     .links_header {
         display: none;
     }
-
-
-
     /* Ajusta o tamanho e o espaçamento do logotipo */
     .logo_K {
         display: flex;
-        height: 80px;
+        height: 40px;
         padding: 10px;
     }
 
     .nome_header {
-
         display: flex;
         font-size: 20px;
         font-family: "Lugrasimo", cursive; /* Define a fonte */
@@ -82,7 +78,7 @@ header {
     .icon_list {
         display:flex;
         flex-direction: row;
-        height: 60px;
+        height: 40px;
         padding: 20px;
     }        
 }
@@ -104,16 +100,21 @@ header {
     /* Ajusta o tamanho e o espaçamento do logotipo */
     .logo_K {
         display: flex;
-        height: 140px;
+        height: 40px;
         padding: 20px;
+    }
+
+    .nome_header {
+        display: flex;
+        font-size: 10px;
+
     }
 
     /* Exibe a lista de ícones */
     .icon_list {
-        display: flex;
+        display:flex;
         flex-direction: row;
-        height: 80px;
-        padding: 0px;
-
-    }
+        height: 40px;
+        padding: 20px;
+        } 
 }
