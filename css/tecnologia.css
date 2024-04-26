@@ -1,0 +1,47 @@
+.container__tecnologia {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background-image: url(/img/blackot_antonina_desfoque.png);
+    background-repeat: no-repeat;
+    background-size: cover; /* Torna a imagem de fundo responsiva */
+    height: 100vh; /* Define a altura para 100% da viewport height */
+}
+
+.text_tecnologia {
+    display: flex;
+    justify-content: center;
+    font-size: 2rem; /* Tamanho do texto */
+}
+
+.img_projetos {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem; /* Convertido de 60px para rem */
+}
+
+.nm_projeto, .p_projeto, .decod_projeto {
+    display: flex;
+    flex-direction: row;
+    width: 40%;
+    height: 40%;
+}
+
+.nm_text, .p_projeto, .decod_text {
+    display: flex;
+    flex-direction: column;
+    font-size: 30px;
+
+}
+
+.icon_tecnologias {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    height: 10%;
+    font-size: 1rem; /* Tamanho do texto */
+    gap: 1rem; /* Convertido de 20px para rem */
+}
+
