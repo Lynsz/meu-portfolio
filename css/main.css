@@ -2,9 +2,15 @@
 @import url("paginainicial.css");
 @import url("aboutme.css");
 @import url("tecnologia.css");
+@import url("construção.css");
 
 body {
     margin: 0px;
     padding: 0;
+}
+
+main {
+    background-image: url(/img/blackot_antonina_desfoque.png);
+    background-repeat: no-repeat;
 }
 
