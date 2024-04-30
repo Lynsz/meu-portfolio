@@ -13,6 +13,7 @@ header {
     left: 0;
     width: 100%;
     background-image: url(/img/blackot_antonina_desfoque.png); /* Define uma imagem de fundo para o header */
+    background-size: cover; /* Torna a imagem de fundo responsiva */
     display: flex; /* Aplica flexbox para alinhar os itens */
     justify-content: space-evenly; /* Alinha os itens horizontalmente com espaçamento uniforme */
     align-items: center; /* Alinha os itens verticalmente ao centro */
@@ -51,15 +52,40 @@ header {
     /* Ajusta o layout do header */
     header {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
         height: 60px;
         width:  100%;
     }
 
-    /* Esconde os links do header */
     .links_header {
-        display: none;
+        
+        font-size: 13px; /* Define o tamanho da fonte */
+        gap: 20px; /* Define o espaçamento entre os links */
     }
+    
+    /* Ajusta o tamanho e o espaçamento do logotipo */
+    .logo_K {
+        display: flex;
+        height: 40px;
+        padding: 10px;
+    }     
+}
+
+/* Estilos adaptativos para telas com largura máxima de 360px */
+@media screen and (max-width: 360px) {
+    /* Ajusta o layout do header */
+    header {
+        
+        gap: 0px;
+        height: 10%; /* Ajusta a altura do header */
+    }
+
+    .links_header {
+        
+        font-size: 13px; /* Define o tamanho da fonte */
+        gap: 8px; /* Define o espaçamento entre os links */
+    }
+
     /* Ajusta o tamanho e o espaçamento do logotipo */
     .logo_K {
         display: flex;
@@ -67,54 +93,5 @@ header {
         padding: 10px;
     }
 
-    .nome_header {
-        display: flex;
-        font-size: 20px;
-        font-family: "Lugrasimo", cursive; /* Define a fonte */
-        font-weight: 400; /* Define o peso da fonte */
-    }
-
-    /* Exibe a lista de ícones */
-    .icon_list {
-        display:flex;
-        flex-direction: row;
-        height: 40px;
-        padding: 20px;
-    }        
 }
-
-/* Estilos adaptativos para telas com largura máxima de 360px */
-@media screen and (max-width: 360px) {
-    /* Ajusta o layout do header */
-    header {
-        justify-content: space-between;
-        gap: 10px;
-        height: 10%; /* Ajusta a altura do header */
-    }
-
-    /* Esconde os links do header */
-    .links_header {
-        display: none;
-    }
-
-    /* Ajusta o tamanho e o espaçamento do logotipo */
-    .logo_K {
-        display: flex;
-        height: 40px;
-        padding: 20px;
-    }
-
-    .nome_header {
-        display: flex;
-        font-size: 10px;
-
-    }
-
-    /* Exibe a lista de ícones */
-    .icon_list {
-        display:flex;
-        flex-direction: row;
-        height: 40px;
-        padding: 20px;
-        } 
-}
+   

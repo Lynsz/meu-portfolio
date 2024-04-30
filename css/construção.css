@@ -1,9 +1,0 @@
-.container_construcao {
-    display: flex;
-    flex-wrap: wrap;
-    background-image: url(/img/blackot_antonina_desfoque.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-}
-

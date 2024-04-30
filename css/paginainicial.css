@@ -10,9 +10,10 @@
     background-image: url(/img/blackot_antonina.jpg);
     background-repeat: no-repeat;
     background-size: cover; /* Torna a imagem de fundo responsiva */
+    width: 100%;
     height: 100vh; /* Define a altura para 100% da viewport height */
     margin-top: 100px;
-    gap: 50px; /* Define o espaçamento entre os elementos */
+
 }
 
 /* Estilos para o nome do conteúdo */
@@ -76,26 +77,30 @@
     }
 
     .conteudo_logo__contato {
-        gap: 30px; /* Reduz o espaçamento entre os elementos */
+        gap: 20px; /* Reduz o espaçamento entre os elementos */
     }
 }
 
 /* Estilos responsivos para telas com largura máxima de 360px */
 @media screen and (max-width: 360px) {
     .conteudo__container__inicial {
+        justify-content: center;
         gap: 0px; /* Reduz ainda mais o espaçamento entre os elementos */
     }
 
-    .conteudo__nome {
-        font-size: 10px; /* Reduz ainda mais o tamanho da fonte */
-    }
-
     .conteudo_logo__contato {
-        gap: 20px; /* Reduz ainda mais o espaçamento entre os elementos */
+        gap: 0px; /* Reduz ainda mais o espaçamento entre os elementos */
     }
 
     .button_paginicial {
         padding: 8px 16px; /* Reduz o tamanho do botão */
         font-size: 16px; /* Reduz o tamanho da fonte do botão */
+    }
+
+    .conteudo_logo__contato {
+        display: flex;
+        flex-direction: column; /* Define a direção dos elementos */
+        font-size: 15px; /* Define o tamanho da fonte */
+       
     }
 }
