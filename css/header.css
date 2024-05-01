@@ -17,7 +17,7 @@ header {
     display: flex; /* Aplica flexbox para alinhar os itens */
     justify-content: space-evenly; /* Alinha os itens horizontalmente com espaçamento uniforme */
     align-items: center; /* Alinha os itens verticalmente ao centro */
-    height: 100px; /* Define a altura do header */
+    height: 80px; /* Define a altura do header */
 }
 
 /* Estilos para o logotipo */

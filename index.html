@@ -24,7 +24,7 @@
             <nav class="links_header">   
                 <a class="sm_link" href="#pagina2">SOBRE MIM</a>
                 <a class="t_link" href="#pagina3">TECNOLOGIA</a>
-                <a class="twit_link" href="#pagina6">CONTATO</a>
+                <a class="twit_link" href="#pagina4">CONTATO</a>
             </nav>
         </header>
 
@@ -56,7 +56,7 @@
             </div>
 
         </section>
-    |
+    
     <!-- CONTEÚDO PÁGINA (2) -->
 
         <div id="pagina2"></div>
@@ -136,11 +136,27 @@
                 
             </div>
         </section>
-        <section>
-            <div>
+
+        <!-- CONTEÚDO PÁGINA (4) -->
+        <section class="contato_container">
+
+            <div id="pagina4"></div>
+            <div class="contato">
                 <h1>CONTATO</h1>
+                <form class="form" id="form" method="POST" action="./js/email.js">
+                    
+                    <label for="name">Nome</label>
+                    <input class="field" type="text" id="name">
+
+                    <label for="">Email</label>
+                    <input type="email" class="field"  id="email">
+                    
+                    <label for="message">Mensagem</label>
+                    <textarea class="field" name="message" id="message"></textarea>
+
+                    <button class="button" type="submit">Enviar</button>
+                </form>
             </div>
-            <div></div>
 
         </section>
     

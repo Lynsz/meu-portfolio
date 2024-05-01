@@ -2,12 +2,17 @@
 @import url("paginainicial.css");
 @import url("aboutme.css");
 @import url("tecnologia.css");
+@import url("formulario.css");
 
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lugrasimo&display=swap');
 
 body {
     
     margin: 0px;
     padding: 0;
+}
+main {
+    font-family: "Lugrasimo", cursive; /* Define a fonte */
 }
 
 

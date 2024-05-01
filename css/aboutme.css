@@ -9,6 +9,7 @@
     justify-content: space-evenly;
     width: 100%;
     align-items: center; /* Centraliza horizontalmente o conteúdo */
+    
 }
 
 
@@ -33,7 +34,6 @@
 .sobremim {
     display: flex;
     justify-content: center;
-    font-family: "Lugrasimo", cursive;
     font-size: 3rem; /* 2 rem */
     margin-bottom: 1rem; /* 1rem */
     
@@ -41,7 +41,6 @@
 
 /* Estilos para o texto "aboutmetext" */
 .aboutmetext {
-    font-family: "Lugrasimo", cursive;
     font-weight: 400;
     font-size: 2rem;
     text-align: center;
@@ -50,7 +49,6 @@
 
 /* Estilos para a citação */
 .citacao {
-    font-family: "Lugrasimo", cursive;
     font-weight: 400;
     font-size: 1.4rem; /* 1.4 rem */
     margin-top: 5px;
@@ -59,7 +57,6 @@
 
 /* Estilos para o nome do autor */
 .name_autor {
-    font-family: "Lugrasimo", cursive;
     font-weight: 400;
     font-size: 1.4rem; /* 1.4 rem */
     text-align: end;

@@ -1,6 +1,4 @@
-/* Importação de fontes do Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lugrasimo&family=Pacifico&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lugrasimo&display=swap');
+
 
 /* Estilos para o conteúdo inicial */
 .conteudo__container__inicial {
@@ -12,7 +10,7 @@
     background-size: cover; /* Torna a imagem de fundo responsiva */
     width: 100%;
     height: 100vh; /* Define a altura para 100% da viewport height */
-    margin-top: 100px;
+    margin-top: 40px;
 
 }
 
